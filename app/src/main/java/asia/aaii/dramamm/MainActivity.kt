@@ -136,7 +136,7 @@ class MainActivity : Activity() {
         header.addView(label("▶ DramaMM",23f,accent,true),dims(0,-2).apply{weight=1f})
         header.addView(button("⚙",{render("Settings")},false),dims(-2,-2))
         frame.addView(header,dims())
-        val scroll=ScrollView(this).apply{isVerticalScrollBarEnabled=false;fillViewport=true}
+        val scroll=ScrollView(this).apply{isVerticalScrollBarEnabled=false;isFillViewport=true}
         page=vbox().apply{setPadding(d(17),d(2),d(17),d(22))}
         scroll.addView(page)
         frame.addView(scroll,dims(-1,0).apply{weight=1f})
