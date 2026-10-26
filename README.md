@@ -1,7 +1,13 @@
-# DramaMM — Native Android
+# DramaMM Native Android V2.1.1
 
-DramaMM V2.1 is a native Android short-drama viewer concept with YouTube/TikTok external creator links, press/pop animation, optional click sound and haptics.
+Independent Native Kotlin/View app for YouTube/TikTok drama research candidates and official source accounts.
 
-This repository is being initialized for the Android source and GitHub Actions build. Build success and APK availability are not confirmed until a workflow run passes and an APK artifact exists.
+Includes 10 review video links, source channels, Discover, Shorts, Search, My List, Profile, Details, Embedded WebView player, Settings, click sounds, scale pop animation and haptics.
 
-Important: External videos remain controlled by YouTube/TikTok and their creators. Research entries and subtitle labels require verification before publication.
+**Important**: This repository currently contains a build-focused streamlined implementation. It is not a pixel-perfect copy of the prior 20-screen UI mockups, and is not a verified licensed content library. Subtitle tracks and embedded playback may vary by source. Rewards and VIP are non-transactional previews.
+
+## Build
+
+Actions → Build DramaMM Native APK → latest run → Artifacts → DramaMM-V2.1-debug-APK. Workflow runs on pushes to main; manual runs available via workflow_dispatch. Install `app-debug.apk` from the downloaded artifact ZIP.
+
+For local builds, use JDK 17, Android SDK 35, Gradle 8.9, then `gradle :app:assembleDebug`.
